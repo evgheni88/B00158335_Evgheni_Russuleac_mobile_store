@@ -9,7 +9,6 @@ $productController = new ProductController($connection);
 $smartphones = $productController->getProducts(1);
 $tablets = $productController->getProducts(2);
 
-// Data to pass to the View
 $data = [
     'smartphones' => $smartphones,
     'tablets' => $tablets
